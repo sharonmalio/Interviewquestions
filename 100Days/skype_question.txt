@@ -1,0 +1,5 @@
+Write a function which accepts a string "a2b3c4" and returns another string "aabbbcccc".
+Other examples:
+Input: "a2b"			Output: "aab"
+Input: "n10"			Output: "nnnnnnnnnn"
+Input: "z0				Output: ""
