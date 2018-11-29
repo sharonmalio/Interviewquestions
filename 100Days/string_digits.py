@@ -48,12 +48,11 @@ def stringchange3(string1):
             new_string = ""
             if string1[counter].isalpha():
                 alphabets = alphabets + string1[counter]
+                counter=counter+1
             elif string1[counter].isdigit():
-                digits = digits+ string1[counter]
-            elif string1[counter].isdigit() and string1[counter+1].isdigit(): 
-                nums  =  string1[counter] + string1[counter+1]
-                digits = digits+ nums
-                new_string  = new_string + int(digits) * alphabets
+                digits = string1[counter]
+                counter=counter+1
+                new_string  = int(digits) * alphabets
                 digits = " "
                 alphabets = " "     
         return new_string
