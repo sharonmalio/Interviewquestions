@@ -18,5 +18,5 @@
 import math
 
 number =math.ceil(3.2)
-divider =  math.ceil((0.78+0.1)/10)
+divider =  math.ceil((0.78+0.01)/10)
 print(divider)

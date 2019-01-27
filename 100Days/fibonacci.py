@@ -13,12 +13,8 @@ def fibonacci(n):
 def fibonacci2(n): 
     a = 0
     b = 1
-    if n < 0: 
-        raise ValueError("Incorrect input") 
-    elif n == 0: 
-        return a 
-    elif n == 1: 
-        return b 
+    if n<2:
+        return n
     else: 
         for i in range(2,n+1): 
             c = a + b 

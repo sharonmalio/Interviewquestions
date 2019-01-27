@@ -14,11 +14,10 @@ def mergesort(arr):
             if L[i]<R[j]:
                 arr[k] = L[i]
                 i+=1
-                k+=1
             else:
                 arr[k] = R[j]
                 j+=1
-                k+=1
+            k+=1
         while i<len(L):
             arr[k] = L[i]
             k+=1
@@ -27,8 +26,6 @@ def mergesort(arr):
             arr[k] = R[j]
             j+=1
             k+=1
-    else:
-        print("not greater than")
     return arr
 
 arr = [2, 6, 1, 8, 5, 10]
